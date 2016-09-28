@@ -13,9 +13,6 @@
         <input type="hidden" name="id" value="1">
         <input type="hidden" name="contact_name" value="Dispatch">
         <input type="hidden" name="contact_phone" value="877-663-2200">
-        
-        <!--
-
         <input type="hidden" name="offering" value="0">
         <input type="hidden" name="in_house_offering" value="0">
         <input type="hidden" name="its_customer" id="its_customer" value="">
@@ -76,7 +73,7 @@
                 </div>
         </div>
 
-        -->
+        
         <div class="form-group">
             <label for="pick_city" class="control-label col-sm-2">Pick City</label>
                 <div class="col-sm-2">
@@ -127,7 +124,7 @@
                 <div class="col-sm-4">
                     <input type="text" name="commodity" id="commodity" class="form-control" value="" placeholder="What are you moving?" required>
                 </div>
-<!--
+
 
             <label for="trailer_type" class="control-label col-sm-2">Trailer Type</label>
             <div class="col-sm-4">
@@ -204,7 +201,7 @@
                 <input type="text" name="special_instructions" class="form-control" id="special_instructions" value="" required>
             </div>
     </div>
--->
+
 
 
 
