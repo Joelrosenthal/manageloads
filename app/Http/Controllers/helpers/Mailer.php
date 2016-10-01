@@ -31,7 +31,7 @@ trait mailer {
 
 	public function sendNewLoadEmail($toAddress,$replyTo)
 	{
-		$content = 'EW have a new load'
-			$this->sendEmail('New Load', $content);
+		$content = 'EW have a new load';
+//			$this->sendEmail('New Load', $content);
 	}
 }

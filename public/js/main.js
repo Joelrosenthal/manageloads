@@ -12,9 +12,9 @@ $(document).ready(function() {
           //       "className":      'details-control',
           //       "orderable":      false,
           //       "data":           null
-            
+
           //   },
-        
+
 			{ "data": "id" },
 			{ "data": "pick_city" },
             { "data": "pick_state"},
@@ -22,21 +22,21 @@ $(document).ready(function() {
             { "data": "delivery_state"},
             { "data": "created_at" },
             { "data": "updated_at"}
-         
-            
+
+
         ],
-        "order": [[1,'desc']], 
+        "order": [[1,'desc']],
 
           "columnDefs": [
-      { "width": "50px", "targets": 0 }, 
+      { "width": "50px", "targets": 0 },
       { "width": "50px", "targets": 1 },
-      { "width": "50px", "targets": 2 }, 
+      { "width": "50px", "targets": 2 },
       { "width": "50px", "targets": 3 },
       { "width": "50px", "targets": 4 },
-      { "width": "50px", "targets": 5 }, 
+      { "width": "50px", "targets": 5 },
       { "width": "50px", "targets": 6 }
-     
-     
+
+
     ]
 
 

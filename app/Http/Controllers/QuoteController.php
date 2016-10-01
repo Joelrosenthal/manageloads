@@ -30,7 +30,7 @@ class QuoteController extends Controller
 	public function index(Request $request)
 	{
 		$data = Quote::all();
-		return($data);
+		return(['data' => $data]);
 	}
 
 }
