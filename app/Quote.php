@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Quote extends Model
 {
 
-	protected $table = 'loaditransys';
+	protected $table = 'loads';
     protected $fillable = [
         'id',
         'its_customer',

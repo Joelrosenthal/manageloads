@@ -2,6 +2,10 @@
 
 @section('content')
  <div class="container">
+
+<div style="padding-bottom:20px;" id="quote_map_display"></div>
+
+
     <div class="well well-lg form-well">
       <h2>Bootstrap Mixed Form <p class="lead">with horizontal and inline fields</p></h2>
         
@@ -10,7 +14,7 @@
     
         {{ csrf_field() }}
 
-        <input type="hidden" name="id" value="1">
+        <!-- <input type="hidden" name="id" value="">
         <input type="hidden" name="contact_name" value="Dispatch">
         <input type="hidden" name="contact_phone" value="877-663-2200">
         <input type="hidden" name="offering" value="0">
@@ -26,9 +30,9 @@
                 <div class="col-sm-2">
                     <input type="text" name="delivery_zip" id="delivery_zip" class="form-control" value="">
                 </div>
-        </div>
+        </div> -->
 
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="tmanum" class="control-label col-sm-2">Reference #</label>
                 <div class="col-sm-2">
                     <input type="text" name="tmanum" id="tmanum" class="form-control" value="" required>
@@ -41,9 +45,9 @@
                 <div class="col-sm-2">
                     <input type="text" name="selected_carrier" id="selected_carrier" class="form-control" value="" required>
                 </div>
-        </div>
+        </div> -->
 
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="urgency" class="control-label col-sm-2">Urgency</label>
                 <div class="col-sm-2">
                     <select name="urgency" id="urgency" class="form-control">
@@ -72,14 +76,14 @@
                     <input type="number" name="billing" id="billing" class="form-control" value="" placeholder="0">
                 </div>
         </div>
-
+ -->
         
         <div class="form-group">
             <label for="pick_city" class="control-label col-sm-2">Pick City</label>
                 <div class="col-sm-2">
                     <input type="text" name="pick_city" id="pick_city" class="form-control" value="" required><span id="found_pick_address"></span>
                 </div>
-            <label for="pick_state" class="control-label col-sm-2">Pick State (ex. OH)</label>
+            <!-- <label for="pick_state" class="control-label col-sm-2">Pick State (ex. OH)</label>
                 <div class="col-sm-2">
                     <input type="text" name="pick_state" id="pick_state" class="form-control" value="" required>
                 </div>
@@ -91,7 +95,7 @@
                         <button class="btn btn-success" id="pick_store_number" type="button">FIND</button>
                 </span>
                 </div>
-                </div>
+                </div> -->
         </div>
 
         <div class="form-group">
@@ -99,7 +103,7 @@
                 <div class="col-sm-2">
                     <input type="text" name="delivery_city" class="form-control" id="delivery_city" value=""required><span id="found_delivery_address"></span>
                 </div>
-            <label for="delivery_state" class="control-label col-sm-2">Delivery State (ex. IL)</label>
+            <!-- <label for="delivery_state" class="control-label col-sm-2">Delivery State (ex. IL)</label>
                 <div class="col-sm-2">
                     <div class="input-group">
                         <input type="text" name="delivery_state" id="delivery_state" class="form-control" value="" required>
@@ -117,9 +121,9 @@
                             </span>
                     </div>
                 </div>
-        </div>
+        </div> -->
 
-        <div class="form-group">
+       <!--  <div class="form-group">
             <label for="commodity" class="control-label col-sm-2">Commodity</label>
                 <div class="col-sm-4">
                     <input type="text" name="commodity" id="commodity" class="form-control" value="" placeholder="What are you moving?" required>
@@ -182,11 +186,11 @@
     <div class="form-group">
         <label for="pick_date" class="control-label col-sm-2">Pick Date</label>
             <div class="col-sm-2">
-                <input type="text" class="form-control" name="pick_date" id="datepicker" value="" required>
+                <input type="text" class="form-control datepicker" name="pick_date" id="datepicker" value="" required>
             </div>
         <label for="del_date" class="control-label col-sm-2">Delivery Date</label>
             <div class="col-sm-2">
-                <input type="text" class="form-control" name="del_date" id="datepicker2" value="" required>
+                <input type="text" class="form-control datepicker" name="del_date" id="datepicker2" value="" required>
             </div>
             <label for="miles" class="control-label col-sm-2">Miles</label>
                 <div class="col-sm-2">
@@ -201,7 +205,7 @@
                 <input type="text" name="special_instructions" class="form-control" id="special_instructions" value="" required>
             </div>
     </div>
-
+ -->
 
 
 
@@ -212,4 +216,42 @@
     </form>
      </div>
 </div>
+
+<table id="myTable" cellspacing="0">
+        <thead>
+            <tr>
+           
+                <th>ID</th>
+                <th>Pick City</th>
+                <th>Pick State</th>
+                <th>Delivery City</th>
+                <th>Delivery State</th>
+                <th>Created At</th>
+                <th>Updated At</th>
+                
+                
+                
+                
+
+
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+            
+                <th>ID</th>
+                <th>Pick City</th>
+                <th>Pick State</th>
+                <th>Delivery City</th>
+                <th>Delivery State</th>
+                <th>Created At</th>
+                <th>Updated At</th>
+              
+                
+           
+                
+
+            </tr>
+        </tfoot>
+    </table>
 @endsection

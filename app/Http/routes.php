@@ -20,3 +20,6 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 Route::post('/quote', 'QuoteController@create');
+
+Route::get('/quote', 'QuoteController@index');
+

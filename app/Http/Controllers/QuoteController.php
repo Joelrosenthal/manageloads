@@ -10,8 +10,12 @@ use App\Http\Requests;
 
 class QuoteController extends Controller
 {
-    public function create(Request $request){
-		
+	use Helpers\Mailer;
+    public function create(Request $request)
+    {
+		//$email_user = "operations@itransys.com";
+
+	$this->sendEmail($request->pick_city,'body','joel.rosenthal@gmail.com','joel.rosenthal@gmail.com');
 		/*$this->validate($request, [
 			'email' => 'required|min:10|max:20'
 		]);*/
@@ -21,6 +25,12 @@ class QuoteController extends Controller
 		$quote->save();
 
 		return back();
-}
+	}
+
+	public function index(Request $request)
+	{
+		$data = Quote::all();
+		return($data);
+	}
 
 }
